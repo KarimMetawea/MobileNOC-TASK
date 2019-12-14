@@ -19,7 +19,7 @@
                                 <rect key="frame" x="20" y="1" width="286.5" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjS-d1-4hb">
-                                        <rect key="frame" x="0.0" y="0.0" width="126.5" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128.5" height="35"/>
                                         <color key="backgroundColor" red="0.7697876386074205" green="0.7697876386074205" blue="0.7697876386074205" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -31,8 +31,8 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="8" scale="default" weight="bold"/>
                                         </state>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Search" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GQT-Iv-NYi" customClass="DesignableUITextField" customModule="MobileNoc_Task" customModuleProvider="target">
-                                        <rect key="frame" x="136.5" y="3" width="140" height="29"/>
+                                    <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Search" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GQT-Iv-NYi" customClass="DesignableUITextField" customModule="MobileNoc_Task" customModuleProvider="target">
+                                        <rect key="frame" x="133.5" y="3" width="143" height="29"/>
                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -40,7 +40,10 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="search"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                                <real key="value" value="2"/>
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                                <real key="value" value="25"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
@@ -50,7 +53,7 @@
                                     <constraint firstItem="EjS-d1-4hb" firstAttribute="width" secondItem="GQT-Iv-NYi" secondAttribute="width" multiplier="0.9" id="4w3-ZI-RdF"/>
                                     <constraint firstAttribute="trailing" secondItem="GQT-Iv-NYi" secondAttribute="trailing" constant="10" id="62l-lI-0Hb"/>
                                     <constraint firstAttribute="bottom" secondItem="GQT-Iv-NYi" secondAttribute="bottom" constant="3" id="Crb-gx-2Kl"/>
-                                    <constraint firstItem="GQT-Iv-NYi" firstAttribute="leading" secondItem="EjS-d1-4hb" secondAttribute="trailing" constant="10" id="D9W-FH-4Nn"/>
+                                    <constraint firstItem="GQT-Iv-NYi" firstAttribute="leading" secondItem="EjS-d1-4hb" secondAttribute="trailing" constant="5" id="D9W-FH-4Nn"/>
                                     <constraint firstItem="GQT-Iv-NYi" firstAttribute="top" secondItem="Cwi-4s-hx7" secondAttribute="top" constant="3" id="IC0-Uy-fEb"/>
                                     <constraint firstAttribute="bottom" secondItem="EjS-d1-4hb" secondAttribute="bottom" id="JCR-HD-xKy"/>
                                     <constraint firstAttribute="height" constant="35" id="SRD-HL-Z60"/>
@@ -66,14 +69,65 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <state key="normal" title="Advanced"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHH-gK-gKq" customClass="StepIndicatorView" customModule="MobileNoc_Task" customModuleProvider="target">
+                                <rect key="frame" x="20" y="46" width="374" height="25"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Ac2-sm-N3x"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfSteps">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="displayNumbers" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleStrokeWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineMargin">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showFlag" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                        <color key="value" red="0.18823529411764706" green="0.40392156862745099" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="circleTintColor">
+                                        <color key="value" red="0.42745098039215684" green="0.76078431372549016" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="currentStep">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineTintColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6t-N9-KP1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="AGS-Nr-JhL"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xOX-O8-wTg" firstAttribute="width" secondItem="Cwi-4s-hx7" secondAttribute="width" multiplier="0.27" id="0N9-SD-ucX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xOX-O8-wTg" secondAttribute="trailing" constant="20" id="Ggl-Kl-biz"/>
+                            <constraint firstItem="r6t-N9-KP1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KS8-BU-MdY"/>
                             <constraint firstItem="Cwi-4s-hx7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="Muq-1y-neY"/>
                             <constraint firstItem="xOX-O8-wTg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="RTf-Mf-Hed"/>
+                            <constraint firstItem="r6t-N9-KP1" firstAttribute="top" secondItem="Cwi-4s-hx7" secondAttribute="bottom" constant="8" id="bwN-6Z-vus"/>
+                            <constraint firstItem="mHH-gK-gKq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cEy-q6-6TW"/>
+                            <constraint firstItem="mHH-gK-gKq" firstAttribute="top" secondItem="Cwi-4s-hx7" secondAttribute="bottom" constant="10" id="g35-bh-BLc"/>
                             <constraint firstItem="xOX-O8-wTg" firstAttribute="leading" secondItem="Cwi-4s-hx7" secondAttribute="trailing" constant="10" id="mQZ-Ga-maj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mHH-gK-gKq" secondAttribute="trailing" constant="20" id="s0W-k6-I23"/>
+                            <constraint firstAttribute="trailing" secondItem="r6t-N9-KP1" secondAttribute="trailing" id="tqO-WL-Qrg"/>
                             <constraint firstItem="Cwi-4s-hx7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="y3N-Iv-VZs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
