@@ -1,24 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n3e-qw-5Hr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Automatic-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MobileNoc_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwi-4s-hx7">
+                                <rect key="frame" x="20" y="1" width="286.5" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjS-d1-4hb">
+                                        <rect key="frame" x="0.0" y="0.0" width="126.5" height="35"/>
+                                        <color key="backgroundColor" red="0.7697876386074205" green="0.7697876386074205" blue="0.7697876386074205" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <inset key="titleEdgeInsets" minX="-8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="6" minY="6" maxX="0.0" maxY="0.0"/>
+                                        <size key="titleShadowOffset" width="15" height="12"/>
+                                        <state key="normal" title="Group name" image="arrowtriangle.down.fill" catalog="system">
+                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="8" scale="default" weight="bold"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Search" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GQT-Iv-NYi" customClass="DesignableUITextField" customModule="MobileNoc_Task" customModuleProvider="target">
+                                        <rect key="frame" x="136.5" y="3" width="140" height="29"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="search"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="EjS-d1-4hb" firstAttribute="width" secondItem="GQT-Iv-NYi" secondAttribute="width" multiplier="0.9" id="4w3-ZI-RdF"/>
+                                    <constraint firstAttribute="trailing" secondItem="GQT-Iv-NYi" secondAttribute="trailing" constant="10" id="62l-lI-0Hb"/>
+                                    <constraint firstAttribute="bottom" secondItem="GQT-Iv-NYi" secondAttribute="bottom" constant="3" id="Crb-gx-2Kl"/>
+                                    <constraint firstItem="GQT-Iv-NYi" firstAttribute="leading" secondItem="EjS-d1-4hb" secondAttribute="trailing" constant="10" id="D9W-FH-4Nn"/>
+                                    <constraint firstItem="GQT-Iv-NYi" firstAttribute="top" secondItem="Cwi-4s-hx7" secondAttribute="top" constant="3" id="IC0-Uy-fEb"/>
+                                    <constraint firstAttribute="bottom" secondItem="EjS-d1-4hb" secondAttribute="bottom" id="JCR-HD-xKy"/>
+                                    <constraint firstAttribute="height" constant="35" id="SRD-HL-Z60"/>
+                                    <constraint firstItem="EjS-d1-4hb" firstAttribute="top" secondItem="Cwi-4s-hx7" secondAttribute="top" id="moH-hQ-dQh"/>
+                                    <constraint firstItem="EjS-d1-4hb" firstAttribute="leading" secondItem="Cwi-4s-hx7" secondAttribute="leading" id="uTZ-hF-8ry"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOX-O8-wTg">
+                                <rect key="frame" x="316.5" y="1" width="77.5" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="c1x-bY-7k1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <state key="normal" title="Advanced"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xOX-O8-wTg" firstAttribute="width" secondItem="Cwi-4s-hx7" secondAttribute="width" multiplier="0.27" id="0N9-SD-ucX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xOX-O8-wTg" secondAttribute="trailing" constant="20" id="Ggl-Kl-biz"/>
+                            <constraint firstItem="Cwi-4s-hx7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="Muq-1y-neY"/>
+                            <constraint firstItem="xOX-O8-wTg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="RTf-Mf-Hed"/>
+                            <constraint firstItem="xOX-O8-wTg" firstAttribute="leading" secondItem="Cwi-4s-hx7" secondAttribute="trailing" constant="10" id="mQZ-Ga-maj"/>
+                            <constraint firstItem="Cwi-4s-hx7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="y3N-Iv-VZs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Automatic" id="uPh-hC-CKx"/>
+                    <connections>
+                        <outlet property="containingView" destination="Cwi-4s-hx7" id="lVh-ao-z1B"/>
+                        <outlet property="dropdownButton" destination="EjS-d1-4hb" id="nep-P4-n4J"/>
+                        <outlet property="searchTextField" destination="GQT-Iv-NYi" id="osX-kd-GZM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Xd-B4-8cz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n3e-qw-5Hr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ceg-Zr-pTQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9Rb-qW-X58"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bL7-Y5-rTg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrowtriangle.down.fill" catalog="system" width="64" height="62"/>
+        <image name="search" width="16.5" height="16.5"/>
+    </resources>
 </document>
