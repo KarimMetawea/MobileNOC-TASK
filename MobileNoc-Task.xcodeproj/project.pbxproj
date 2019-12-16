@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D93389D523A7FFA500C5E065 /* GradientProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93389D423A7FFA500C5E065 /* GradientProgress.swift */; };
+		D93389D823A80B1200C5E065 /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93389D723A80B1200C5E065 /* DeviceHelper.swift */; };
+		D93389DA23A80B8000C5E065 /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93389D923A80B8000C5E065 /* LayoutHelper.swift */; };
+		D93389DC23A82D7800C5E065 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93389DB23A82D7800C5E065 /* UIColorExtension.swift */; };
 		D9C5E33923A53E83001F6F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5E33823A53E83001F6F1A /* AppDelegate.swift */; };
 		D9C5E33B23A53E83001F6F1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5E33A23A53E83001F6F1A /* SceneDelegate.swift */; };
 		D9C5E33D23A53E83001F6F1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5E33C23A53E83001F6F1A /* ViewController.swift */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D93389D423A7FFA500C5E065 /* GradientProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientProgress.swift; sourceTree = "<group>"; };
+		D93389D723A80B1200C5E065 /* DeviceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHelper.swift; sourceTree = "<group>"; };
+		D93389D923A80B8000C5E065 /* LayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutHelper.swift; sourceTree = "<group>"; };
+		D93389DB23A82D7800C5E065 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		D9C5E33523A53E83001F6F1A /* MobileNoc-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MobileNoc-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C5E33823A53E83001F6F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9C5E33A23A53E83001F6F1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D93389D323A7FA3300C5E065 /* GradientProgress */ = {
+			isa = PBXGroup;
+			children = (
+				D93389D423A7FFA500C5E065 /* GradientProgress.swift */,
+			);
+			path = GradientProgress;
+			sourceTree = "<group>";
+		};
+		D93389D623A80AEC00C5E065 /* LayoutHelper */ = {
+			isa = PBXGroup;
+			children = (
+				D93389D723A80B1200C5E065 /* DeviceHelper.swift */,
+				D93389D923A80B8000C5E065 /* LayoutHelper.swift */,
+			);
+			path = LayoutHelper;
+			sourceTree = "<group>";
+		};
 		D9C5E32C23A53E83001F6F1A = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +132,8 @@
 		D9C5E34F23A53EFC001F6F1A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D93389D623A80AEC00C5E065 /* LayoutHelper */,
+				D93389D323A7FA3300C5E065 /* GradientProgress */,
 				D9C5E35623A54B9F001F6F1A /* StepProgressView */,
 				D9C5E35F23A576AB001F6F1A /* CustomUITextFIeld.swift */,
 			);
@@ -116,6 +143,7 @@
 		D9C5E35023A53F0B001F6F1A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D93389DB23A82D7800C5E065 /* UIColorExtension.swift */,
 				D9C5E35423A5474D001F6F1A /* UItextfieldExtension.swift */,
 				D9C5E35D23A568FC001F6F1A /* UIViewExtension .swift */,
 			);
@@ -234,8 +262,12 @@
 				D9C5E33D23A53E83001F6F1A /* ViewController.swift in Sources */,
 				D9C5E35C23A54BBC001F6F1A /* StepIndicatorView.swift in Sources */,
 				D9C5E35523A5474D001F6F1A /* UItextfieldExtension.swift in Sources */,
+				D93389DC23A82D7800C5E065 /* UIColorExtension.swift in Sources */,
+				D93389D523A7FFA500C5E065 /* GradientProgress.swift in Sources */,
+				D93389DA23A80B8000C5E065 /* LayoutHelper.swift in Sources */,
 				D9C5E33923A53E83001F6F1A /* AppDelegate.swift in Sources */,
 				D9C5E33B23A53E83001F6F1A /* SceneDelegate.swift in Sources */,
+				D93389D823A80B1200C5E065 /* DeviceHelper.swift in Sources */,
 				D9C5E35E23A568FC001F6F1A /* UIViewExtension .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
